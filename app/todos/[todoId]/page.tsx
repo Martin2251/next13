@@ -1,5 +1,6 @@
 import React from 'react'
 import { Todo } from '../../../typings';
+// this is doing same job as server side rendering
 
 type PageProps = {
     params:{
