@@ -13,7 +13,8 @@ const fetchTodo = async (todoId: string) => {
     //call to 3rd party url 
 
     const res = await fetch(
-        `https://jsonplaceholder.typicode.com/todos/${todoId}`,
+        // revalidate it number of seconds
+        `https://jsonplaceholder.typicode.com/todos/${todoId}`, {next: {revalidate:60}}
     );
 
     const todo = await res.json()
