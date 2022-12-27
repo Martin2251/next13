@@ -1,8 +1,12 @@
 import React from 'react'
+import TodosList from './TodosList';
 
 const Todos = () => {
   return (
-    <div>todos</div>
+    <div>
+        {/* @ts-ignore */}
+    <TodosList  /> 
+    </div>
   )
 }
 
